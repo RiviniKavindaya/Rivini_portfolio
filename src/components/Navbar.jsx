@@ -13,9 +13,12 @@ function Navbar() {
         <a href="#contact">Contact</a>
       </div>
 
-      <button className="bg-primary px-5 py-2 rounded-full text-sm">
-        Hire Me
-      </button>
+     <a
+    href="#contact"
+    className="bg-primary px-5 py-2 rounded-full text-sm inline-block"
+    >
+    Hire Me
+    </a>
     </nav>
   );
 }

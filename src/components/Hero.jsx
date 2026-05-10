@@ -72,13 +72,19 @@ function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-4 mt-8 justify-center lg:justify-start">
-            <button className="bg-primary hover:opacity-90 transition px-7 py-3 rounded-full text-white font-medium">
+            <a
+              href="#projects"
+              className="bg-primary hover:opacity-90 transition px-7 py-3 rounded-full text-white font-medium"
+            >
               View Projects
-            </button>
+            </a>
 
-            <button className="border border-white/20 hover:border-primary transition px-7 py-3 rounded-full text-white">
+            <a
+              href="#contact"
+              className="border border-white/20 hover:border-primary transition px-7 py-3 rounded-full text-white"
+            >
               Contact
-            </button>
+            </a>
           </div>
         </div>
 
