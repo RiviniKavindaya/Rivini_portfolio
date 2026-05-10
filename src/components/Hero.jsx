@@ -43,10 +43,11 @@ function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(124,109,250,0.15),transparent_40%)]" />
       <div className="absolute inset-0 opacity-5 bg-[linear-gradient(rgba(255,255,255,0.3)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.3)_1px,transparent_1px)] bg-[size:40px_40px]" />
 
-      <div className="relative z-10 w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-16">
+      {/* MAIN WRAPPER */}
+      <div className="relative z-10 w-full flex flex-col lg:flex-row items-center justify-between gap-16">
 
-        {/* LEFT */}
-        <div className="max-w-2xl">
+        {/* LEFT CONTENT */}
+        <div className="max-w-2xl order-1 lg:order-1 text-center lg:text-left">
 
           <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-4 py-2 text-primary text-xs uppercase tracking-widest mb-6">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
@@ -65,12 +66,12 @@ function Hero() {
             <span className="text-primary animate-pulse">|</span>
           </div>
 
-          <p className="text-white/60 text-lg leading-8 mt-6 max-w-xl">
+          <p className="text-white/60 text-lg leading-8 mt-6 max-w-xl mx-auto lg:mx-0">
             Building scalable production-ready web applications with React.js,
             Laravel, AI integrations, and cloud technologies.
           </p>
 
-          <div className="flex flex-wrap gap-4 mt-8">
+          <div className="flex flex-wrap gap-4 mt-8 justify-center lg:justify-start">
             <button className="bg-primary hover:opacity-90 transition px-7 py-3 rounded-full text-white font-medium">
               View Projects
             </button>
@@ -81,10 +82,9 @@ function Hero() {
           </div>
         </div>
 
-        {/* RIGHT IMAGE */}
-        <div className="relative flex justify-center items-center w-full lg:w-auto">
+        {/* RIGHT IMAGE (NOW ALWAYS BELOW ON MOBILE) */}
+        <div className="relative flex justify-center items-center w-full lg:w-auto order-2 lg:order-2 mt-12 lg:mt-0">
 
-          {/* IMAGE WRAPPER (IMPORTANT FIX) */}
           <div className="relative w-[260px] md:w-[250px] lg:w-[290px]">
 
             {/* Glow */}
@@ -97,28 +97,24 @@ function Hero() {
               className="relative w-full rounded-[30px] border border-white/10 shadow-2xl object-cover z-10"
             />
 
-            {/* FLOATING STATS (FIXED POSITIONING) */}
+            {/* FLOATING STATS */}
 
-            {/* 1 */}
-            <div className="absolute -top-10 -left-10 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl px-4 py-3 shadow-xl z-20">
+            <div className="absolute -top-10 -left-6 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl px-4 py-3 shadow-xl z-20">
               <h3 className="font-syne text-xl font-bold text-white">2+</h3>
               <p className="text-white/50 text-xs">Years Experience</p>
             </div>
 
-            {/* 2 */}
-            <div className="absolute top-10 -right-12 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl px-4 py-3 shadow-xl z-20">
+            <div className="absolute top-10 -right-8 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl px-4 py-3 shadow-xl z-20">
               <h3 className="font-syne text-xl font-bold text-white">10+</h3>
               <p className="text-white/50 text-xs">Projects</p>
             </div>
 
-            {/* 3 */}
-            <div className="absolute bottom-10 -left-12 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl px-4 py-3 shadow-xl z-20">
+            <div className="absolute bottom-10 -left-8 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl px-4 py-3 shadow-xl z-20">
               <h3 className="font-syne text-xl font-bold text-white">Top 5</h3>
               <p className="text-white/50 text-xs">Research</p>
             </div>
 
-            {/* 4 */}
-            <div className="absolute -bottom-10 -right-10 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl px-4 py-3 shadow-xl z-20">
+            <div className="absolute -bottom-10 -right-6 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl px-4 py-3 shadow-xl z-20">
               <h3 className="font-syne text-xl font-bold text-white">AI</h3>
               <p className="text-white/50 text-xs">Systems Integration</p>
             </div>
